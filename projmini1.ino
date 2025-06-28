@@ -18,8 +18,8 @@ RTC_DS3231 rtc;
 RTC_DATA_ATTR int bootCount = 0;
 
 // Replace with your network credentials
-const char* ssid = "vivo 1726";
-const char* password = "chandu1919";
+const char* ssid = "  ";
+const char* password = "  ";
 
 WebServer server(80);
 
