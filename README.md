@@ -3,8 +3,8 @@ To develop a system to develop a cost-effective, compact, and efficient system c
 
 This mini-project is a low-power motion detection system that uses an ESP32 microcontroller, a PIR motion sensor, and a Real-Time Clock (RTC) module. It is designed for security and automation applications, such as detecting human presence, logging activity time, or triggering alerts.
 
-⚙️ How the Project Works
-1. Hardware Components
+## ⚙️ How the Project Works
+## 1. Hardware Components
 
 ESP32 → Main controller for processing signals and managing data.
 
@@ -16,7 +16,7 @@ Buzzer/LED (optional) → Alerts the user when motion is detected.
 
 Power Supply (USB/Adapter/Battery)
 
-2. Working Principle
+## 2. Working Principle
 
 Motion Detection
 
@@ -42,7 +42,7 @@ An LED or buzzer can be triggered for real-time feedback.
 
 Optionally, the ESP32 can send notifications via Wi-Fi (MQTT/HTTP/Telegram/Email) for smart IoT integration.
 
-3. Flow of the System
+## 3. Flow of the System
 
 PIR detects motion → sends HIGH signal.
 
@@ -52,7 +52,7 @@ Timestamp + motion event is logged/displayed.
 
 Alert (LED/Buzzer/Message) is activated.
 
-4. Applications
+## 4. Applications
 
 Home & Office security systems
 
@@ -62,14 +62,14 @@ IoT-based smart surveillance
 
 Automatic light/fan control when someone enters a room
 
-📊 Features
+## 📊 Features
 
 ✔️ Low-cost, low-power security solution
 ✔️ Accurate time-stamped motion detection using RTC
 ✔️ Expandable with IoT (Wi-Fi alerts, cloud logging)
 ✔️ Works standalone with simple hardware
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Store logs in an SD card / cloud database
 
@@ -79,4 +79,4 @@ Mobile app notification system
 
 Battery backup for RTC to maintain accuracy during power failure
 
-⚡ With this project, the ESP32 and PIR sensor create a smart and reliable motion detection system, while the RTC ensures precise time logging for each event.
+## ⚡ With this project, the ESP32 and PIR sensor create a smart and reliable motion detection system, while the RTC ensures precise time logging for each event.
