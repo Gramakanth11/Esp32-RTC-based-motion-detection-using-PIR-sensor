@@ -4,6 +4,9 @@ To develop a system to develop a cost-effective, compact, and efficient system c
 This mini-project is a low-power motion detection system that uses an ESP32 microcontroller, a PIR motion sensor, and a Real-Time Clock (RTC) module. It is designed for security and automation applications, such as detecting human presence, logging activity time, or triggering alerts.
 
 ## ⚙️ How the Project Works
+
+<img width="1010" height="397" alt="image" src="https://github.com/user-attachments/assets/a21f8966-8ef6-4b7d-8a9c-c6dfd43f7283" />
+
 ## 1. Hardware Components
 
 ESP32 → Main controller for processing signals and managing data.
@@ -51,6 +54,9 @@ ESP32 reads signal → requests timestamp from RTC.
 Timestamp + motion event is logged/displayed.
 
 Alert (LED/Buzzer/Message) is activated.
+
+<img width="1500" height="561" alt="image" src="https://github.com/user-attachments/assets/66ef4550-81a9-47e5-b610-97347ed9a18b" />
+
 
 ## 4. Applications
 
