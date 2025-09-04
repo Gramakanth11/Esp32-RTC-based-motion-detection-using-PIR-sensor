@@ -19,6 +19,76 @@ Buzzer/LED (optional) → Alerts the user when motion is detected.
 
 Power Supply (USB/Adapter/Battery)
 
+## Hardware Connections
+Components:
+
+ESP32 (or ESP32-CAM if you also want photo capture)
+
+PIR Motion Sensor (HC-SR501)
+
+RTC Module (DS3231 or DS1307)
+
+Jumper wires
+
+Breadboard
+
+Optional: MicroSD card module for storing logs/pictures
+
+1. PIR Sensor → ESP32
+
+VCC → 5V (or 3.3V, depending on PIR model)
+
+GND → GND
+
+OUT → GPIO 14 (you can use another GPIO if you prefer)
+
+2. RTC DS3231 → ESP32 (I²C)
+
+VCC → 3.3V
+
+GND → GND
+
+SDA → GPIO 21 (default SDA on ESP32)
+
+SCL → GPIO 22 (default SCL on ESP32)
+
+## Arduino IDE Setup
+
+Install ESP32 Board Package
+
+Open Arduino IDE → File → Preferences.
+
+In “Additional Board Manager URLs,” paste:
+
+https://dl.espressif.com/dl/package_esp32_index.json
+
+
+Go to Tools → Board → Board Manager.
+
+Search ESP32 → Install.
+
+Select Board
+
+Tools → Board → ESP32 Arduino → Select ESP32 Dev Module (or ESP32-CAM if you use camera).
+
+Install Required Libraries
+
+RTClib (by Adafruit) → for RTC DS3231
+
+Wire.h (already built-in) → for I²C
+
+SD / SPIFFS (if storing logs/pictures)
+
+WiFi.h (if you want cloud upload or server access)
+
+Upload Settings
+
+Tools → Upload Speed: 115200
+
+Partition Scheme: Default
+
+Port: Select correct COM port
+
 ## 2. Working Principle
 
 Motion Detection
